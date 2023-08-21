@@ -16,7 +16,7 @@ namespace Samples.Debugging.Web.WebUI.Models
 
         [DataType(DataType.Currency)]
         [Column(TypeName="decimal(18,2)")]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
         // Expense Type ID (foreign key)
         [Display(Name = "Expense Type")]

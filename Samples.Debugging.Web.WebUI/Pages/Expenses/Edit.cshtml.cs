@@ -66,7 +66,7 @@ namespace Samples.Debugging.Web.WebUI.Pages.Expenses
                 "expense",
                 s => s.ID, s => s.DateIncurred, s => s.Description, s => s.Location, s => s.Price, s => s.ExpenseTypeID, s => s.UserID))
             {
-                 
+
                 try
                 {
                     var numberOfUpdates = await _expenseRepository.UpdateExpense(emptyExpense);

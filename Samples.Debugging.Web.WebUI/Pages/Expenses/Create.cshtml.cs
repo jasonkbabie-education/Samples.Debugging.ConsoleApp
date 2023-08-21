@@ -60,10 +60,8 @@ namespace Samples.Debugging.Web.WebUI.Pages.Expenses
 
                 emptyExpense.UserID = 123;
                 bool success = await _expenseRepository.AddExpense(emptyExpense);
-                
-                return RedirectToPage("./Index");
 
-                
+                return RedirectToPage("./Index");
             }
 
             return Page();
